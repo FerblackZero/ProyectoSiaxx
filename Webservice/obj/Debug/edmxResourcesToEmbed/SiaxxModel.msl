@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="System_UPBCModelStoreContainer" CdmEntityContainer="System_UPBCEntities">
+    <EntitySetMapping Name="Alumnos">
+      <EntityTypeMapping TypeName="System_UPBCModel.Alumnos">
+        <MappingFragment StoreEntitySet="Alumnos">
+          <ScalarProperty Name="Id_Alumno" ColumnName="Id_Alumno" />
+          <ScalarProperty Name="Matricula" ColumnName="Matricula" />
+          <ScalarProperty Name="Nombre_Completo" ColumnName="Nombre_Completo" />
+          <ScalarProperty Name="Carrera" ColumnName="Carrera" />
+          <ScalarProperty Name="PeriodoIngreso" ColumnName="PeriodoIngreso" />
+          <ScalarProperty Name="FK_Cuatrimestre" ColumnName="FK_Cuatrimestre" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="Condicion" ColumnName="Condicion" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="FK_Tutor" ColumnName="FK_Tutor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Calificaciones">
+      <EntityTypeMapping TypeName="System_UPBCModel.Calificaciones">
+        <MappingFragment StoreEntitySet="Calificaciones">
+          <ScalarProperty Name="Id_Calificaciones" ColumnName="Id_Calificaciones" />
+          <ScalarProperty Name="FK_Alumno" ColumnName="FK_Alumno" />
+          <ScalarProperty Name="FK_Materias" ColumnName="FK_Materias" />
+          <ScalarProperty Name="Calificacion1" ColumnName="Calificacion1" />
+          <ScalarProperty Name="Calificacion2" ColumnName="Calificacion2" />
+          <ScalarProperty Name="Calificacion3" ColumnName="Calificacion3" />
+          <ScalarProperty Name="CalificacionFinal" ColumnName="CalificacionFinal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cuatrimestres">
+      <EntityTypeMapping TypeName="System_UPBCModel.Cuatrimestres">
+        <MappingFragment StoreEntitySet="Cuatrimestres">
+          <ScalarProperty Name="Id_Cuatrimestre" ColumnName="Id_Cuatrimestre" />
+          <ScalarProperty Name="Cuatrimestre" ColumnName="Cuatrimestre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Docentes">
+      <EntityTypeMapping TypeName="System_UPBCModel.Docentes">
+        <MappingFragment StoreEntitySet="Docentes">
+          <ScalarProperty Name="Id_Docente" ColumnName="Id_Docente" />
+          <ScalarProperty Name="ClaveDocente" ColumnName="ClaveDocente" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="Puesto" ColumnName="Puesto" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Grupos">
+      <EntityTypeMapping TypeName="System_UPBCModel.Grupos">
+        <MappingFragment StoreEntitySet="Grupos">
+          <ScalarProperty Name="Id_Grupo" ColumnName="Id_Grupo" />
+          <ScalarProperty Name="Grupo" ColumnName="Grupo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Materias">
+      <EntityTypeMapping TypeName="System_UPBCModel.Materias">
+        <MappingFragment StoreEntitySet="Materias">
+          <ScalarProperty Name="Id_Materias" ColumnName="Id_Materias" />
+          <ScalarProperty Name="Clave" ColumnName="Clave" />
+          <ScalarProperty Name="Materia" ColumnName="Materia" />
+          <ScalarProperty Name="PrimerCorte" ColumnName="PrimerCorte" />
+          <ScalarProperty Name="SegundoCorte" ColumnName="SegundoCorte" />
+          <ScalarProperty Name="TercerCorte" ColumnName="TercerCorte" />
+          <ScalarProperty Name="Horario" ColumnName="Horario" />
+          <ScalarProperty Name="FK_Docente" ColumnName="FK_Docente" />
+          <ScalarProperty Name="FK_Grupo" ColumnName="FK_Grupo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="System_UPBCModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tutor">
+      <EntityTypeMapping TypeName="System_UPBCModel.Tutor">
+        <MappingFragment StoreEntitySet="Tutor">
+          <ScalarProperty Name="Id_Tutor" ColumnName="Id_Tutor" />
+          <ScalarProperty Name="FK_Docente" ColumnName="FK_Docente" />
+          <ScalarProperty Name="HorarioAtencion" ColumnName="HorarioAtencion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="System_UPBCModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="Id_Usuario" ColumnName="Id_Usuario" />
+          <ScalarProperty Name="Matricula" ColumnName="Matricula" />
+          <ScalarProperty Name="Contraseña" ColumnName="Contraseña" />
+          <ScalarProperty Name="FK_Alumno" ColumnName="FK_Alumno" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

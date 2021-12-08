@@ -1,0 +1,222 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Index.master.cs" Inherits="WebApplication3.Index" %>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UPBC | Universidad Politecnica De Baja California.</title>
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../css/normalize.css" rel="stylesheet" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link href="../css/style.css" rel="stylesheet" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="..js/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="../js/modernizr.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+</head>
+<body>
+    <!--======================================== Boton ir arriba ========================================-->
+    <i class="btn-up fa fa-arrow-circle-o-up hidden-xs"></i>
+    <!--======================================== Navegación ========================================-->
+    <header class="full-reset header">
+        <!--======================================== Logo(Nombre INS) ========================================-->
+        <div class="full-reset logo">
+            <span class="hidden-lg hidden-md">Lorem</span>
+            <span class="hidden-xs hidden-sm">U  P  B  C</span>
+            <!--====== 	<img src="assets/img/logo-upbc.png" style="max-width:100%;width:auto;height:auto;"> =====-->
+
+        </div>
+        <!--======================================== Links de navegación ========================================-->
+        <nav class="full-reset navigation">
+            <ul class="full-reset list-unstyled">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="institucion.html" target="_blank">Universidad</a></li>
+                <li class="dropdown">
+                    <a>Acceso al SIAAX</a>
+                    <ul>
+                        <li>
+                            <a href="SiaxxLogin.aspx" target="red">Alumnos</a>
+                        </li>
+                        <li>
+                            <a
+                                href="http://www2.upbc.edu.mx/siaax/Defaultx.aspx"
+                                target="_blank">Maestros</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!--======================================== Boton menu mobil ========================================-->
+        <a href="#" class=" hidden-sm hidden-md hidden-lg pull-right button-menu-mobile show-close-menu-m"><i class="fa fa-ellipsis-v"></i></a>
+    </header>
+    <!--======================================== Logo & Lema ========================================-->
+    <section class="full-reset font-cover" style="background-image: url(../assets/img/font-index.jpg);">
+        <div class="full-reset" style="height: 100%; background-color: rgba(255,255,255,.6); padding: 60px 0;">
+            <h1 class="text-center titles">Bienvenido a Universidad Politecnica de Baja California</h1>
+            <figure class="Logo-Ins-Index">
+                <img src="../assets/img/logo-upbc.png" alt="Logo" class="img-responsive">
+            </figure>
+            <p class="lead text-center">
+                "Tu mejor opcion en educacion"
+		
+            </p>
+        </div>
+    </section>
+    <div class="divider-general"></div>
+    <!--======================================== Video corto & carrusel========================================-->
+    <section class="full-reset" style="background-color: rgb(242, 242, 242); padding: 40px 0;">
+        <div class="container">
+            <h2 class="text-center titles">Bienvenido a UPBC</h2>
+            <br>
+            <br>
+            <!--======================================== Carrusel ========================================-->
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-push-6">
+                    <h3 class="text-center titles">Nuestras Instalaciones</h3>
+                    <p class="lead">
+                        Somos tu mejor opcion, no solo en vanguardia educativa, sino tambien en nuestras instalaciones, y nuestro manejo de clases en linea y presencial.
+				
+                    </p>
+                    <img src="../assets/gallery/default.png" alt="Logo" class="img-responsive">
+                </div>
+                <div class="col-xs-12 col-sm-6 col-sm-pull-6">
+                    <div id="slider-ins" class="carousel slide" data-ride="carousel">
+                        <!-- Indicadores -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#slider-ins" data-slide-to="0" class="active"></li>
+                            <li data-target="#slider-ins" data-slide-to="1"></li>
+                            <li data-target="#slider-ins" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Imagenes -->
+                        <div class="carousel-inner" role="listbox">
+
+                            <!-- Primera imagen -->
+                            <div class="item active">
+                                <img src="../assets/gallery/default.png" alt="Default">
+                                <div class="carousel-caption">
+                                    Instalaciones comodas
+					     
+                                </div>
+                            </div>
+
+                            <!-- Segunda imagen -->
+                            <div class="item">
+                                <img src="../assets/gallery/default-2.png" alt="Default">
+                                <div class="carousel-caption">
+                                    Excelente estacionamiento
+					     
+                                </div>
+                            </div>
+
+                            <!-- Tercera imagen -->
+                            <div class="item">
+                                <img src="../assets/gallery/default-3.png" alt="Default">
+                                <div class="carousel-caption">
+                                    Todas las medidas de seguridad
+					     
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Controles -->
+                        <a class="left carousel-control" href="#slider-ins" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#slider-ins" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="divider-general"></div>
+            <br>
+
+            <!--======================================== Acontecer institucional ========================================-->
+            <section class="events-ins">
+                <div class="container-fluid">
+                    <h2 class="text-center titles">CONOCENOS MEJOR</h2>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <!--======================================== Articulo 1 ========================================-->
+                        <article class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="../assets/gallery/default.png" alt="IMG" class="img-responsive img-rounded">
+                                <div class="caption">
+                                    <h3 class="text-center">Somos una Universidad comprometida </h3>
+                                    <p class="text-justify">Nuestro principal compromiso es con nuestros estudiantes, es por eso que siempre estamos ahi para apoyarlos y convertir a nuestros estudiantes en miembros preparados para su especialidad</p>
+
+                                </div>
+                            </div>
+                        </article>
+                        <!--======================================== Articulo 2 ========================================-->
+                        <article class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="../assets/gallery/default-2.png" alt="IMG" class="img-responsive img-rounded">
+                                <div class="caption">
+                                    <h3 class="text-center">Lideres en Tecnologia</h3>
+                                    <p class="text-justify">Contamos con la mejor tecnologia para brindarle a nuestros estudiantes todos los recursos de su formacion asi como los programas necesarios para que estos completen el curso de una manera plena y eficaz.</p>
+
+                                </div>
+                            </div>
+                        </article>
+                        <!--======================================== Articulo 3 ========================================-->
+                        <article class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="../assets/gallery/default-3.png" alt="IMG" class="img-responsive img-rounded">
+                                <div class="caption">
+                                    <h3 class="text-center">Conoce nuestras carreras</h3>
+                                    <p class="text-justify">Contamos con 6 carreras de las cuales 5 son ingenierias, y de las cuales contamos con la mejor tecnologia para poder aplicar los conocimientos adquiridos en el mercado de trabajo de cada una de estas.</p>
+
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <div class="divider-general"></div>
+
+            <!--======================================== Pie de pagina ========================================-->
+            <footer class="full-reset footer">
+                <div class="full-reset" style="padding: 15px 0;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4">
+                                <h4 class="titles text-center">Visitenos en</h4>
+                                <p class="text-center">
+                                    Calle de la Claridad S/N
+							Colonia Plutarco Elías Cales, Mexicali, Baja California, México CP.21376
+                                </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <h4 class="titles text-center">Contactenos</h4>
+                                <p class="text-center">Tel Conmutador: (52) 686-104.2727<br>
+                                </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <h4 class="titles subtitles-footer">Siguenos en</h4>
+                                <ul class="list-unstyled links-footer">
+                                    <li><a href="https://www.facebook.com/VinculacionUPBC/" class="open-link-newTab"><i class="fa fa-facebook"></i>&nbsp; Facebook</a></li>
+                                    <li><a href="https://twitter.com/VinculacionUPBC" class="open-link-newTab"><i class="fa fa-twitter"></i>&nbsp; Twitter</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+</body>
+</html>

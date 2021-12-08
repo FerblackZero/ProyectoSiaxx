@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiaxxLogin.master.cs" Inherits="WebApplication3.view.SiaxxLogin" %>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login Form Design One | Fazt</title>
+    <link rel="stylesheet" href="/css/master.css">
+  </head>
+  <body>
+
+    <div class="login-box">
+      <img src="../assets/img/logo-upbc.png" class="avatar" alt="Avatar Image">
+      <h1>Acceso a alumno</h1>
+      <form id="ingreso" runat="server">
+        <!-- USERNAME INPUT -->
+        <asp:Label ID="LBMatricula" AssociatedControlID="txtMatricula" Text="Matricula: " runat="server"></asp:Label>
+                <asp:TextBox runat="server" ID="txtMatricula" CssClass="input"></asp:TextBox>
+        <!-- PASSWORD INPUT -->
+       <asp:Label ID="LBPass" AssociatedControlID="txtContra" Text="Contraseña: " runat="server"></asp:Label>
+                <asp:TextBox runat="server" ID="txtContra" CssClass="input" TextMode="Password"></asp:TextBox>
+       <a href="EnSesion.aspx" target="_blank"><asp:Button runat="server" ID="BtnLogin" CssClass="btn" Text="Accesar" OnClick="BtnLogin_Click"></asp:Button></a>
+        <a href="#">olvido la contraseña?</a><br>
+      </form>
+    </div>
+  </body>
+</html>

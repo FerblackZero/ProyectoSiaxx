@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width" />
+ http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style id="stndz-style"></style>
+    <title>
+
+    </title>
+    <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/_7Co1fh8iT2hcjvquYJ_3zSP/recaptcha__es_419.js" crossorigin="anonymous" integrity="sha384-aLl48R39S0QYrub8KNE6eLhIqD5ccgNBEcOMl2DXpAqjz4fDUUR93tp0+lFjghDG"></script>
+    <script type="text/javascript">
+        window.history.go(1);
+    </script>
+
+    <link href="CSS/layout.css" rel="stylesheet" type="text/css">
+
+    <link type="text/css" href="css/jquery.toastmessage-min.css" rel="stylesheet">
+    <script type="text/javascript" src="JS/jquery-1.5.min.js"></script>
+    <script type="text/javascript" src="JS/jquery.toastmessage-min.js"></script>
+
+    <script type="text/javascript">
+        //exito
+        function showSuccessToast(msg, p) {
+            $().toastmessage('showSuccessToast', msg, p);
+        }
+        //notificacion
+        function showSuccessToast2(msg, p) {
+            $().toastmessage('showSuccessToast2', msg, p); //notificacion
+        }
+        //informacion
+        function showNoticeToast(msg, p) {
+            $().toastmessage('showNoticeToast', msg, p);
+        }
+        //advertencia
+        function showWarningToast(msg, p) {
+            $().toastmessage('showWarningToast', msg, p);
+        }
+        //error funcion
+        function showErrorToast(msg, p) {
+            $().toastmessage('showErrorToast', msg, p);
+        }
+    </script>
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <link href="/alumnos/siaax/WebResource.axd?d=muo14kpNqO6LNUIjDpKFDsgTTVFC6ad7qVM7_8ANdZEb9kIiTIWCFxyP3CNPRzt302UCvJ5cpxT7antsFDjHxQOQb7yYbsBvVzjOVnZ5Y4VOncAxb63BLLh1olHsgSz1G-p4WJitXmew7Xp4ZofRyMGvjFs8TdSJqCtBtTfgKCg1&amp;t=634714555400000000" type="text/css" rel="stylesheet">
+    <link href="/alumnos/siaax/WebResource.axd?d=DU1X3RBVYDssro9zQVKMAwz92RSmPUPjidvqusawXSzkUuofWmbmxymF4NwWmTqQETr0zjnKlrHAzVh7kuPPl8kOSSW6c25_LWE5ukS1r0mQn4bsaD3ILlzno1dzEuZv0QAmnXjAK9V3duIyM5AOU-mvuO5zvWSkoX9WG-Os4EQ1&amp;t=634714555400000000" type="text/css" rel="stylesheet">
+    <link href="/alumnos/siaax/WebResource.axd?d=q5yrW0TdD_qwm7TKaqCO8YQ-sEZ51dekqRBa8dL_4qNyTgUi5anM_0F1zcw5LUS6z76jtBdN47GO6IeXCfcbCOXEGWT-QpTHJein0YsREGFjLr0jcrtqbcvAIeJoCiQPznhxDbQRaxWjdwpVvenTZvxLAclKXkoPC2G60DQIORI1&amp;t=634714555400000000" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <form method="post" action="./" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+            <input type="hidden" name="ContentPlaceHolder1_ToolkitScriptManager2_HiddenField" id="ContentPlaceHolder1_ToolkitScriptManager2_HiddenField" value=";;AjaxControlToolkit, Version=4.1.60501.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e:en-US:5c09f731-4796-4c62-944b-da90522e2541:de1feab2:f9cec9bc:a67c2700:f2c8e708:720a52bf:589eaa30:698129cf:79ad130a:e148b24b:7311d143:ab09e3fe:87104b7c:8613aea7:3202a5a2:be6fb298">
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTE3NTM2Njc5OA9kFgJmD2QWAgIDD2QWAgIBD2QWAgIFD2QWBAIBD2QWBGYPDxYEHghDc3NDbGFzcwUGSGVhZGVyHgRfIVNCAgJkZAIBDw8WBB8ABQhDb250ZW50cx8BAgIWAh4Fc3R5bGUFDWRpc3BsYXk6bm9uZTtkAgIPZBYEZg8PFgQfAAUGSGVhZGVyHwECAmRkAgEPDxYEHwAFCENvbnRlbnRzHwECAhYCHwIFDWRpc3BsYXk6bm9uZTtkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBSZjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGNrX2NvbnRpbnVhcpZBeatETMb1dUuWLZ0deAR58/tgdAOG7YOjoMdmD5vy">
+        </div>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            var theForm = document.forms['form1'];
+            if (!theForm) {
+                theForm = document.form1;
+            }
+            function __doPostBack(eventTarget, eventArgument) {
+                if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                    theForm.__EVENTTARGET.value = eventTarget;
+                    theForm.__EVENTARGUMENT.value = eventArgument;
+                    theForm.submit();
+                }
+            }
+            //]]>
+        </script>
+
+
+        <script src="/alumnos/siaax/WebResource.axd?d=CUX4br235G4cXPT4rWVetu6yZupXbPx6c54ngU8kD_DiQlZkP1GHEGTJXlAYdS-p7yjO_35thVZEpIwg-bP6ijHuVdGYVQadH05oH-0cgD41&amp;t=635803002500000000" type="text/javascript"></script>
+
+
+        <script src="/alumnos/siaax/ScriptResource.axd?d=KsQEGo-c3knjpfeBw5suLAae-dReDxDCI1NO7m3dAgfY93kKP_Ce8QdtG4H3Y6jFImuBdNnWcwsI9hp4PPjm3Ul02opsQyljYqRONVgJl3fFF9HP9pUZv3Ioq0UCqPGPQ6uriIQ2CerMeGFy8lAj5L4zov4xB4ff0fofKz6fk1k1&amp;t=ffffffffd1fec354" type="text/javascript"></script>
+        <script src="/alumnos/siaax/ScriptResource.axd?d=iPkTlh7QCtVG0WzRPz3A8KSYOE-rxvlvLqXu6zCw9kSIW6jOdD7KH7LuoLTCJXvGHT5Ez4gMGP448uwVAjDsu0_4pkyV8VINb18vMITDSRvj0Kk1Z-zmqbR3e3csHjY59SmHA0ItPsKXZvtyvlA5GQ2&amp;t=ffffffffaa73f696" type="text/javascript"></script>
+        <script type="text/javascript">
+            //<![CDATA[
+            if (typeof (Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+            //]]>
+        </script>
+
+        <script src="/alumnos/siaax/ScriptResource.axd?d=bkkNd1VcRxZuoinP3iQ6dAwPk39iKrYvRkoxNrnQCFV9iYF0ewrZEX6gncSi7CmzW_837wb562QwvdrdJj4c5-YHurrG043VAlX1hEl1i0GJFOBj5Vr--f0sEIgT5z5b4HcEE0mxXKOx8fdcz06w9Q2&amp;t=ffffffffaa73f696" type="text/javascript"></script>
+        <script src="/alumnos/siaax/default.aspx?_TSM_HiddenField_=ContentPlaceHolder1_ToolkitScriptManager2_HiddenField&amp;_TSM_CombinedScripts_=%3b%3bAjaxControlToolkit%2c+Version%3d4.1.60501.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d28f01b0e84b6d53e%3aen-US%3a5c09f731-4796-4c62-944b-da90522e2541%3ade1feab2%3af9cec9bc%3aa67c2700%3af2c8e708%3a720a52bf%3a589eaa30%3a698129cf%3a79ad130a%3ae148b24b%3a7311d143%3aab09e3fe%3a87104b7c%3a8613aea7%3a3202a5a2%3abe6fb298" type="text/javascript"></script>
+        <script src="/alumnos/siaax/WebResource.axd?d=dKsQaqejIKQ3SLXxhGv5mljn29J9D8F0HyQQB47QRYLAG34gGAM3c5V9azH0wSReneLr6ItY9pdILhcn1g-q14GWMBW1pwcFsuPENYTymKw1&amp;t=635803002500000000" type="text/javascript"></script>
+        <script type="text/javascript">
+            //<![CDATA[
+            function WebForm_OnSubmit() {
+                if (typeof (ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+                return true;
+            }
+            //]]>
+        </script>
+
+        <div class="aspNetHidden">
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="59F678C4">
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdABQ6HN3eUTC7VP/m/dNi/s3S707yWmjWljEeVsCmmmW7y9M5CkZkS9Nqyc/ozofev1+PpOvQkmHCeZmHx2mKV7WyUd9RYUa9gbE/fM23HSTXYeguGkO56OsxWILHN7nZncrFmbzExE7cF/+TmUffVievSl+PTqtum1bs/NKZyUS5om0U89bgbXl1J9mPTwpdcH6MDTm2GXeIu2UwDVG2eKFL/QSu59kE7ooMpPMabxGp/UPhLDpAJci50nyBtzJdO2MRWQEf/RmU+XZgSKxAefg4on180RPL3Cz3J1FP4z1S7+LXI0jvNzzE7tmm0rHnugwDlP2lfRJP5GpZDy5R9myhnqED8IHLs+qehfC5NYwoHWEuB7xc0v32rj3NxChR+FaAcxsy+ascnlnAhe3Oak7o5+2HO62dEdC9N1vWyC79e4UF4iGP3ObGrvScmM/hDUGBvhnd1EygbqHyXOHcXDwl">
+        </div>
+        <header id="header">
+            <hgroup>
+                <h3 class="section_title">
+                    <img src="images/banner1.jpg">
+                </h3>
+            </hgroup>
+        </header> <!-- end of header bar -->
+        <div>
+
+
+            <section id="main" class="column">
+                <script type="text/javascript">
+                    //<![CDATA[
+                    Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitScriptManager2', 'form1', ['tctl00$ContentPlaceHolder1$UpdatePanel2', 'ContentPlaceHolder1_UpdatePanel2', 'tctl00$ContentPlaceHolder1$up_v_info', 'ContentPlaceHolder1_up_v_info', 'tctl00$ContentPlaceHolder1$up_vista', 'ContentPlaceHolder1_up_vista', 'tctl00$ContentPlaceHolder1$up_vista4', 'ContentPlaceHolder1_up_vista4', 'tctl00$ContentPlaceHolder1$AccordionPane1_content$upNewUpdatePanel', 'ContentPlaceHolder1_upNewUpdatePanel'], [], ['ctl00$ContentPlaceHolder1$tb_aceptar', 'ContentPlaceHolder1_tb_aceptar'], 90, 'ctl00');
+                    //]]>
+                </script>
+
+
+
+
+                <article class="module width_full500" style=" margin-left:45%; margin-top:10%">
+                    <header><h3>Acceso alumnos</h3></header>
+                    <div class="module_content">
+                        <div>
+                            <div id="ContentPlaceHolder1_pl_aceptar" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ContentPlaceHolder1_tb_aceptar')">
+
+                                <div style="text-align:left; width: 500px; margin-top:5%;">
+                                    <span id="ContentPlaceHolder1_lb_accedersistema" style="color:#0033CC;font-size:11pt;">Acceder al sistema</span>
+                                </div>
+                                <div style="text-align:left; width: 480px;">
+                                    <span id="ContentPlaceHolder1_Label2" style="color:Black;font-size:10pt;">Introduzca por favor su usuario.</span>
+                                </div>
+                                <div id="usr_info" style="float:left; width:500px; height: 14px;  margin-top:10px;">
+                                    <div id="usr1" style="float:left; font-size: 12px; text-align:right; width:15%;">&nbsp;Matricula:</div>
+                                    <div id="usr2" style="text-align:left; float:left; width:350px; height: 20px;" align="center">
+                                        &nbsp;
+                                        &nbsp;
+                                        <input name="ctl00$ContentPlaceHolder1$tb_usr" type="text" maxlength="45" id="ContentPlaceHolder1_tb_usr" style="font-size:10pt;width:180px;">
+
+
+                                        <span id="ContentPlaceHolder1_rfv_usr" style="display:none;"></span>
+                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$rfv_usr_ValidatorCalloutExtender_ClientState" id="ContentPlaceHolder1_rfv_usr_ValidatorCalloutExtender_ClientState">
+                                        <div id="ContentPlaceHolder1_tb_usr_BalloonPopupExtender_balloonPopup" class="ajax__balloon_popup" style="position: absolute; visibility: hidden; left: 530px; top: 118px; z-index: 1000; display: none;">
+                                            <span class="rect" style="background-position: 0px -300px;">
+                                                <span class=" small">
+                                                    <div class="rect small top_right_shadow">
+                                                        <div class="rect small top_right">
+                                                            <div class="ajax__content">
+                                                                <div id="ContentPlaceHolder1_Panel1" style="display: block; width: 160px; height: 100px; position: absolute; left: 15px; top: 25px; overflow: auto;">
+
+                                                                    Para accesar ingrese su usuario.
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br></br>
+                                <div id="usr_info" style="float:left; width:500px; height: 14px;  margin-top:10px;">
+                                    <div id="pass1" style=" float:left; font-size: 12px; text-align:right; width:15%">Contraseña:</div>
+                                    <div id="pass2" style="text-align:left; width:166px; float:left;" align="center">
+                                        &nbsp;
+                                        &nbsp;
+                                        <input name="ctl00$ContentPlaceHolder1$tb_pass" type="password" maxlength="15" id="ContentPlaceHolder1_tb_pass" style="font-size:10pt;width:65px;">
+
+
+                                        <span id="ContentPlaceHolder1_rfv_pass" style="display:none;"></span>
+                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$rfv_pass_ValidatorCalloutExtender_ClientState" id="ContentPlaceHolder1_rfv_pass_ValidatorCalloutExtender_ClientState">
+
+
+                                        <div id="ContentPlaceHolder1_BalloonPopupExtender1_balloonPopup" class="ajax__balloon_popup" style="position: absolute; visibility: visible; left: 415px; top: 147px; z-index: 1000;">
+                                            <span class="rect" style="background-position: 0px -300px;">
+                                                <span class=" small">
+                                                    <div class="rect small top_right_shadow">
+                                                        <div class="rect small top_right">
+                                                            <div class="ajax__content">
+                                                                <div id="ContentPlaceHolder1_Panel2" style="display: block; width: 160px; height: 100px; position: absolute; left: 15px; top: 25px; overflow: auto;">
+
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <div id="info_button" style="float:left;  width:500px;   margin-top:5%">
+
+
+                                    <div id="ContentPlaceHolder1_UpdatePanel2">
+
+                                        <div style="margin-left:150px;">
+                                            <input type="submit" name="ctl00$ContentPlaceHolder1$tb_aceptar" value="Acceso" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(quot& ctl00$ContentPlaceHolder1$tb_aceptar &quot &quot &quot &true, quot &grp_info_login&quot &quot &quot &false, false))" id="ContentPlaceHolder1_tb_aceptar" style="color:White;background-color:#2B5273;font-size:8pt;height:25px;-webkit-border-top-left-radius:8px; -webkit-border-bottom-left-radius:8px; -moz-border-radius-topleft:8px; -moz-border-radius-bottomleft:8px; border-top-left-radius:8px; border-bottom-left-radius:8px; -webkit-border-top-right-radius:8px; -webkit-border-bottom-right-radius:8px; -moz-border-radius-topright:8px; -moz-border-radius-bottomright:8px; border-top-right-radius:8px; border-bottom-right-radius:8px;">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <div id="ContentPlaceHolder1_Accordion2" style="height: auto; width: 600px; overflow: auto;">
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$Accordion2_AccordionExtender_ClientState" id="ContentPlaceHolder1_Accordion2_AccordionExtender_ClientState" value="-1"><div id="ContentPlaceHolder1" class="Header">
+
+                                <div style="height:25px; text-align:left;">
+                                    <span id="ContentPlaceHolder1_lb_recuppass" style="color:#0033CC;font-size:11pt;">Olvido su contraseña?</span>
+                                </div>
+
+                            </div><div style="height: 0px; overflow: hidden; display: none; opacity: 0;">
+                                <div id="ContentPlaceHolder1" class="Contents" style="display: block; height: auto; overflow: hidden;">
+
+
+                                    <div style="text-align:left; width:300px;">
+                                        <span id="ContentPlaceHolder1_Label4" style="color:Black;font-size:10pt;">Se le enviará a su cuenta de correo su contraseña.</span>
+                                    </div>
+
+
+                                    <div id="ContentPlaceHolder1_pl_enviar" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ContentPlaceHolder1_bt_recuppass')">
+
+                                        <div id="ContentPlaceHolder1_upNewUpdatePanel">
+
+                                            <div id="Div1" style="text-align:left; float:left; width:400px; margin-top:10px; ">
+                                                <div id="Div3" style="text-align:left; float:left; width:385px; font-size: 12px;">
+                                                    Es necesario contar con el correo electrónico que usted este usando actualmente y que haya sido registrado en su perfil o proporcionado a gestion escolar, ya que por este medio recibirá la información solicitada. Si su correo no aparece en la bandeja principal, favor de verificar en la bandeja de correos no deseados y aceptarlo como un correo deseado.
+                                                    <br>
+                                                    <br>
+                                                    Matricula:
+                                                    <br>
+                                                    <input name="ctl00$ContentPlaceHolder1$AccordionPane1_content$tb_mat" type="text" maxlength="6" id="ContentPlaceHolder1_tb_mat" style="height:20px;width:200px;">
+                                                    <br>
+                                                    <br>
+                                                    Correo electronico:
+                                                    <br>
+                                                    <input name="ctl00$ContentPlaceHolder1$AccordionPane1_content$tb_email" type="text" maxlength="85" id="ContentPlaceHolder1_tb_email" style="height:20px;width:450px;">
+                                                    <br>
+                                                    <span id="ContentPlaceHolder1_Label1">ejemplo: jperez@gmail.com</span>
+                                                    <span id="ContentPlaceHolder1_rfv_email" style="display:none;"></span>
+                                                    <input type="hidden" name="ctl00$ContentPlaceHolder1$AccordionPane1_content$rfv_email_ValidatorCalloutExtender_ClientState" id="ContentPlaceHolder1_rfv_email_ValidatorCalloutExtender_ClientState">
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div id="Div2" style=" margin-left:160px; float:left;  width:400px; margin-top:5px;">
+                                            <br>
+
+                                            <input type="submit" name="ctl00$ContentPlaceHolder1$AccordionPane1_content$bt_recuppass" value="Enviar" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(quot &ctl00$ContentPlaceHolder1$AccordionPane1_content$bt_recuppass&quot &quot &quot &true &quot &grp_email&quot &quot &quot&false, false))" id="ContentPlaceHolder1_bt_recuppass" style="color:White;background-color:#2B5273;height:25px;-webkit-border-top-left-radius:8px; -webkit-border-bottom-left-radius:8px; -moz-border-radius-topleft:8px; -moz-border-radius-bottomleft:8px; border-top-left-radius:8px; border-bottom-left-radius:8px; -webkit-border-top-right-radius:8px; -webkit-border-bottom-right-radius:8px; -moz-border-radius-topright:8px; -moz-border-radius-bottomright:8px; border-top-right-radius:8px; border-bottom-right-radius:8px;">
+
+                                            <br>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div style="text-align:center;">
+
+
+
+                        <div>
+
+                            <div class="clear"></div>
+                            <div class="spacer"></div>
+                        </div>
+                    </div>
+                </article>
+
+
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hf_v_info" id="ContentPlaceHolder1_hf_v_info">
+
+
+
+                <div id="ContentPlaceHolder1_pl_v_info" style="display: none; position: fixed; z-index: 100001;">
+
+
+                    <div id="ContentPlaceHolder1_up_v_info">
+
+
+                        <article class="module width_full1000">
+                            <header>
+                                <h3 class="tabs_involved"> </h3>
+                            </header>
+
+                            <div class="module_content">
+
+                                <div style="text-align:left;">
+
+                                    <br>
+                                    <br>
+                                    <div style="text-align:left;">
+                                        <span id="ContentPlaceHolder1_Label16" style="font-size:22pt;">Actualizar correo electronico registrado en Gestión Escolar.</span>
+                                        <br>
+                                        <input name="ctl00$ContentPlaceHolder1$tb_actualizacion_correo" type="text" maxlength="45" id="ContentPlaceHolder1_tb_actualizacion_correo" style="width:350px;">
+                                        <span id="ContentPlaceHolder1_rfv_tb_actualizacion_correo" style="display:none;"></span>
+                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$vce_tb_actualizacion_correo_ClientState" id="ContentPlaceHolder1_vce_tb_actualizacion_correo_ClientState">
+                                        <span id="ContentPlaceHolder1_rev_tb_actualizacion_correo" style="font-size:Small;display:none;"></span>
+                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$vce2_tb_actualizacion_correo_ClientState" id="ContentPlaceHolder1_vce2_tb_actualizacion_correo_ClientState">
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <span id="ContentPlaceHolder1_Label11" style="color:#500050;font-size:16pt;">SE SOLICITA ACTUALIZAR SU CORREO ELECTRONICO. ESTE ES DE IMPORTANCIA PARA MANTENERLO INFORMADO Y VINCULARLO CON CORREOS ELECTRONICOS DE LA UPBC.</span>
+                                    <br>
+                                    <br>
+
+                                    <div style="text-align:left;">
+                                        <div>
+                                            <input id="ContentPlaceHolder1_ck_continuar" type="checkbox" name="ctl00$ContentPlaceHolder1$ck_continuar" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ck_continuar\',\'\')', 0)"><label for="ContentPlaceHolder1_ck_continuar">He leido y el correo capturado es el correcto.</label>
+                                            <br>
+
+                                            <br>
+                                            <span id="ContentPlaceHolder1_Label14" style="color:#500050;font-size:10pt;">GRACIAS</span>
+                                        </div>
+                                    </div>
+                                    <div style="text-align:Center;">
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                        </article>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hf_vista" id="ContentPlaceHolder1_hf_vista">
+
+
+
+
+                <div id="ContentPlaceHolder1_pl_vista" style="display: none; position: fixed; z-index: 100001;">
+
+                    <div id="ContentPlaceHolder1_up_vista">
+
+
+                        <article class="module width_full1000">
+                            <header>
+                                <h3 class="tabs_involved"> </h3>
+                            </header>
+
+                            <div class="module_content">
+
+                                <div style=" text-align:left;">
+
+                                    <span id="ContentPlaceHolder1_lb_m1" style="color:#500050;font-size:26pt;">COSTOS DE COLEGIATURA A PARTIR DEL CUATRIMESTRE 2015-1.</span>
+                                    <br>
+                                    <br>
+                                    <span id="ContentPlaceHolder1_lb_m2" style="color:#500050;font-size:24pt;">Con la finalidad de que nuestra universidad tenga los recursos suficientes para seguir brindado los servicios de calidad en educación superior tecnológica y que siga apoyando a nuestros alumnos con becas económicas que fomenten el desarrollo de cada uno de ellos. Y con fundamento en la autorización de la Junta Directiva de la Universidad Politécnica de Baja California en sesión extraordinaria llevada a cabo el día 27 de noviembre del 2014,  se informa a la comunidad estudiantil los costos de inscripción y reinscripción a partir del cuatrimestre 2015-1 son de $ 2,400 pesos (Dos Mil Cuatrocientos Pesos 00/100 M.N.).</span>
+                                    <br>
+                                    <br>
+                                    <span id="ContentPlaceHolder1_lb_m3" style="color:#500050;font-size:24pt;">El alumno interesado en solicitar su inscripción o reinscripción con una prórroga de pago podrá realizarlo mediante un convenio previo estudio socioeconómico, cubriendo la cantidad de $1,000.00 (Mil pesos 00/100 M.N.), como mínimo, prorrogando el resto del pago a más tardar un mes antes de finalizar el cuatrimestre.</span>
+
+                                </div>
+
+                            </div>
+
+                            <footer>
+                                <div style="text-align:center; margin-top:5px;">
+
+                                    <input type="submit" name="ctl00$ContentPlaceHolder1$bt_cerrar" value="Cerrar" id="ContentPlaceHolder1_bt_cerrar" style="margin-right:10px;">
+
+                                </div>
+                            </footer>
+                        </article>
+
+
+                    </div>
+
+
+                </div>
+
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hf_vista2" id="ContentPlaceHolder1_hf_vista2">
+
+
+
+
+                <div id="ContentPlaceHolder1_pl_vista2" style="display: none; position: fixed; z-index: 100001;">
+
+                    <div id="ContentPlaceHolder1_up_vista4">
+
+
+                        <article class="module width_full1000">
+                            <header>
+                                <h3 class="tabs_involved"> </h3>
+                            </header>
+
+                            <div class="module_content">
+
+                                <div style=" text-align:left;">
+
+                                    <br>
+                                    <br>
+                                    <span id="ContentPlaceHolder1_Label5" style="color:#500050;font-size:24pt;">
+                                        SE LES INFORMA A LOS ALUMNOS QUE TRAMITARON CONVENIO PARA EL CUATRIMESTRE 2015-3, QUE EL PAGARE SE VENCIÓ EL DÍA 13 DE NOVIEMBRE DE 2015. PASAR A PAGAR A LA BREVEDAD POSIBLE, EVITE QUE SE LE CANCELE CUALQUIER OPORTUNIDAD DE TRAMITAR UN NUEVO CONVENIO.
+                                    </span>
+                                    <br>
+
+
+                                    <br>
+                                    <br>
+
+                                    <div style="text-align:center;">
+                                        <span id="ContentPlaceHolder1_Label6" style="color:#500050;font-size:24pt;">GRACIAS</span>
+                                        <br>
+                                        <span id="ContentPlaceHolder1_Label3" style="color:#500050;font-size:24pt;">DEPTO. FINANZAS</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <footer>
+                                <div style="text-align:center; margin-top:5px;">
+
+                                    <input type="submit" name="ctl00$ContentPlaceHolder1$bt_cerrar2" value="Cerrar" id="ContentPlaceHolder1_bt_cerrar2" style="margin-right:10px;">
+
+                                </div>
+                            </footer>
+                        </article>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+                <div class="clear"></div>
+                <div class="spacer"></div>
+
+
+
+
+                <div id="ContentPlaceHolder1_mp_v_info_backgroundElement" class="backgroundColor" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"></div><div id="ContentPlaceHolder1_mp_vista_backgroundElement" class="backgroundColor" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"></div><div id="ContentPlaceHolder1_mp_vista2_backgroundElement" class="backgroundColor" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"></div>
+            </section>
+
+
+        </div>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            var Page_Validators = new Array(document.getElementById("ContentPlaceHolder1_rfv_usr"), document.getElementById("ContentPlaceHolder1_rfv_pass"), document.getElementById("ContentPlaceHolder1_rfv_email"), document.getElementById("ContentPlaceHolder1_rfv_tb_actualizacion_correo"), document.getElementById("ContentPlaceHolder1_rev_tb_actualizacion_correo"));
+            //]]>
+        </script>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            var ContentPlaceHolder1_rfv_usr = document.all ? document.all["ContentPlaceHolder1_rfv_usr"] : document.getElementById("ContentPlaceHolder1_rfv_usr");
+            ContentPlaceHolder1_rfv_usr.controltovalidate = "ContentPlaceHolder1_tb_usr";
+            ContentPlaceHolder1_rfv_usr.errormessage = "<b>Campo es  Requerido</b><br/ >Usuario<br /><br />";
+            ContentPlaceHolder1_rfv_usr.display = "None";
+            ContentPlaceHolder1_rfv_usr.validationGroup = "grp_info_login";
+            ContentPlaceHolder1_rfv_usr.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+            ContentPlaceHolder1_rfv_usr.initialvalue = "";
+            var ContentPlaceHolder1_rfv_pass = document.all ? document.all["ContentPlaceHolder1_rfv_pass"] : document.getElementById("ContentPlaceHolder1_rfv_pass");
+            ContentPlaceHolder1_rfv_pass.controltovalidate = "ContentPlaceHolder1_tb_pass";
+            ContentPlaceHolder1_rfv_pass.errormessage = "<b>Campo es  Requerido</b><br/ >Contraseña<br /><br />";
+            ContentPlaceHolder1_rfv_pass.display = "None";
+            ContentPlaceHolder1_rfv_pass.validationGroup = "grp_info_login";
+            ContentPlaceHolder1_rfv_pass.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+            ContentPlaceHolder1_rfv_pass.initialvalue = "";
+            var ContentPlaceHolder1_rfv_email = document.all ? document.all["ContentPlaceHolder1_rfv_email"] : document.getElementById("ContentPlaceHolder1_rfv_email");
+            ContentPlaceHolder1_rfv_email.controltovalidate = "ContentPlaceHolder1_tb_email";
+            ContentPlaceHolder1_rfv_email.errormessage = "<b>Campo es  Requerido</b><br/ >Correo electronico<br /><br />";
+            ContentPlaceHolder1_rfv_email.display = "None";
+            ContentPlaceHolder1_rfv_email.validationGroup = "grp_email";
+            ContentPlaceHolder1_rfv_email.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+            ContentPlaceHolder1_rfv_email.initialvalue = "";
+            var ContentPlaceHolder1_rfv_tb_actualizacion_correo = document.all ? document.all["ContentPlaceHolder1_rfv_tb_actualizacion_correo"] : document.getElementById("ContentPlaceHolder1_rfv_tb_actualizacion_correo");
+            ContentPlaceHolder1_rfv_tb_actualizacion_correo.controltovalidate = "ContentPlaceHolder1_tb_actualizacion_correo";
+            ContentPlaceHolder1_rfv_tb_actualizacion_correo.errormessage = "Campo es requerido correo electronico";
+            ContentPlaceHolder1_rfv_tb_actualizacion_correo.display = "None";
+            ContentPlaceHolder1_rfv_tb_actualizacion_correo.validationGroup = "grp_actualizar";
+            ContentPlaceHolder1_rfv_tb_actualizacion_correo.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+            ContentPlaceHolder1_rfv_tb_actualizacion_correo.initialvalue = "";
+            var ContentPlaceHolder1_rev_tb_actualizacion_correo = document.all ? document.all["ContentPlaceHolder1_rev_tb_actualizacion_correo"] : document.getElementById("ContentPlaceHolder1_rev_tb_actualizacion_correo");
+            ContentPlaceHolder1_rev_tb_actualizacion_correo.controltovalidate = "ContentPlaceHolder1_tb_actualizacion_correo";
+            ContentPlaceHolder1_rev_tb_actualizacion_correo.errormessage = "El correo debe tener este formato\r\n                                            (nombrecorreo@correo.com)";
+            ContentPlaceHolder1_rev_tb_actualizacion_correo.display = "None";
+            ContentPlaceHolder1_rev_tb_actualizacion_correo.validationGroup = "grp_actualizar";
+            ContentPlaceHolder1_rev_tb_actualizacion_correo.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+            ContentPlaceHolder1_rev_tb_actualizacion_correo.validationexpression = "\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+            //]]>
+        </script>
+
+
+        <script type="text/javascript">
+            //<![CDATA[
+            (function () { var fn = function () { $get("ContentPlaceHolder1_ToolkitScriptManager2_HiddenField").value = ''; Sys.Application.remove_init(fn); }; Sys.Application.add_init(fn); })();
+            var Page_ValidationActive = false;
+            if (typeof (ValidatorOnLoad) == "function") {
+                ValidatorOnLoad();
+            }
+
+            function ValidatorOnSubmit() {
+                if (Page_ValidationActive) {
+                    return ValidatorCommonOnSubmit();
+                }
+                else {
+                    return true;
+                }
+            }
+            WebForm_AutoFocus('ContentPlaceHolder1_tb_usr'); Sys.Application.add_init(function () {
+                $create(Sys.Extended.UI.BalloonPopupControlBehavior, { "BalloonPopupControlID": "ContentPlaceHolder1_Panel1", "balloonPopupPosition": 1, "customClassName": "oval", "displayOnClick": false, "displayOnMouseOver": true, "dynamicServicePath": "/alumnos/siaax/default.aspx", "id": "ContentPlaceHolder1_tb_usr_BalloonPopupExtender" }, null, null, $get("ContentPlaceHolder1_tb_usr"));
+            });
+
+            document.getElementById('ContentPlaceHolder1_rfv_usr').dispose = function () {
+                Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_rfv_usr'));
+            }
+            Sys.Application.add_init(function () {
+                $create(Sys.Extended.UI.ValidatorCalloutBehavior, { "ClientStateFieldID": "ContentPlaceHolder1_rfv_usr_ValidatorCalloutExtender_ClientState", "closeImageUrl": "/alumnos/siaax/WebResource.axd?d=KZXDpKwsqqPE4YdzL1NxCrjWr9c0G3MqEd699DnA3sLoYPRi55txqs6V74oFdfFckPsgcV5_LXwUeFC6BqRvGNw-E73LMCitcFX1tAqoWBl51m8f3kF7WTuOBRaNhZRBINUwEauIXp1c0idxB58wxw2\u0026t=634714555400000000", "id": "ContentPlaceHolder1_rfv_usr_ValidatorCalloutExtender", "warningIconImageUrl": "/alumnos/siaax/WebResource.axd?d=AdycLm98SvVRNgCm8YXfmu6U56w8ApWhDe2xLlcSd64cDCbV8zNfKnArhl2dFOJe9nhMTrBBbm9-VDfB5KxMObC4G7QNozKewUWXBvH4JXcF-znE8Xe3JM2v0zwC6cZZ8U7OVpluVut9kWSfZfzgwQ2\u0026t=634714555400000000" }, null, null, $get("ContentPlaceHolder1_rfv_usr"));
+            });
+            Sys.Application.add_init(function () {
+                $create(Sys.Extended.UI.BalloonPopupControlBehavior, { "BalloonPopupControlID": "ContentPlaceHolder1_Panel2", "balloonPopupPosition": 1, "customClassName": "oval", "displayOnClick": false, "displayOnMouseOver": true, "dynamicServicePath": "/alumnos/siaax/default.aspx", "id": "ContentPlaceHolder1_BalloonPopupExtender1" }, null, null, $get("ContentPlaceHolder1_tb_pass"));
+            });
+
+            document.getElementById('ContentPlaceHolder1_rfv_pass').dispose = function () {
+                Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_rfv_pass'));
+            }
+            Sys.Application.add_init(function () {
+                $create(Sys.Extended.UI.ValidatorCalloutBehavior, { "ClientStateFieldID": "ContentPlaceHolder1_rfv_pass_ValidatorCalloutExtender_ClientState", "closeImageUrl": "/alumnos/siaax/WebResource.axd?d=KZXDpKwsqqPE4YdzL1NxCrjWr9c0G3MqEd699DnA3sLoYPRi55txqs6V74oFdfFckPsgcV5_LXwUeFC6BqRvGNw-E73LMCitcFX1tAqoWBl51m8f3kF7WTuOBRaNhZRBINUwEauIXp1c0idxB58wxw2\u0026t=634714555400000000", "id": "ContentPlaceHolder1_rfv_pass_ValidatorCalloutExtender", "warningIconImageUrl": "/alumnos/siaax/WebResource.axd?d=AdycLm98SvVRNgCm8YXfmu6U56w8ApWhDe2xLlcSd64cDCbV8zNfKnArhl2dFOJe9nhMTrBBbm9-VDfB5KxMObC4G7QNozKewUWXBvH4JXcF-znE8Xe3JM2v0zwC6cZZ8U7OVpluVut9kWSfZfzgwQ2\u0026t=634714555400000000" }, null, null, $get("ContentPlaceHolder1_rfv_pass"));
+            });
+            Sys.Application.add_init(function () {
+                $create(Sys.Extended.UI.AccordionBehavior, { "ClientStateFieldID": "ContentPlaceHolder1_Accordion2_AccordionExtender_ClientState", "FadeTransitions": true, "FramesPerSecond": 100, "HeaderCssClass": "Header", "HeaderSelectedCssClass": "SelectedHeader", "SelectedIndex": -1, "id": "ContentPlaceHolder1_Accordion2_AccordionExtender", "requireOpenedPane": false }, null, null, $get("ContentPlaceHolder1_Accordion2"));
+            });
+
+            document.getElementById('ContentPlaceHolder1_rfv_email').dispose = function () {
+                Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_rfv_email'));
+            }
+            Sys.Application.add_init(function () {
+                $create(Sys.Extended.UI.ValidatorCalloutBehavior, { "ClientStateFieldID": "ContentPlaceHolder1_rfv_email_ValidatorCalloutExtender_ClientState", "closeImageUrl": "/alumnos/siaax/WebResource.axd?d=KZXDpKwsqqPE4YdzL1NxCrjWr9c0G3MqEd699DnA3sLoYPRi55txqs6V74oFdfFckPsgcV5_LXwUeFC6BqRvGNw-E73LMCitcFX1tAqoWBl51m8f3kF7WTuOBRaNhZRBINUwEauIXp1c0idxB58wxw2\u0026t=634714555400000000", "id": "ContentPlaceHolder1_rfv_email_ValidatorCalloutExtender", "warningIconImageUrl": "/alumnos/siaax/WebResource.axd?d=AdycLm98SvVRNgCm8YXfmu6U56w8ApWhDe2xLlcSd64cDCbV8zNfKnArhl2dFOJe9nhMTrBBbm9-VDfB5KxMObC4G7QNozKewUWXBvH4JXcF-znE8Xe3JM2v0zwC6cZZ8U7OVpluVut9kWSfZfzgwQ2\u0026t=634714555400000000" }, null, null, $get("ContentPlaceHolder1_rfv_email"));
+            });
+            Sys.Application.add_init(function () {
+                $create(Sys.Extended.UI.ModalPopupBehavior, { "BackgroundCssClass": "backgroundColor", "PopupControlID": "ContentPlaceHolder1_pl_v_info", "dynamicServicePath": "/alumnos/siaax/default.aspx", "id": "ContentPlaceHolder1_mp_v_info" }, null, null, $get("ContentPlaceHolder1_hf_v_info"));
+            });
+
+            document.getElementById('ContentPlaceHolder1_rfv_tb_actualizacion_correo').dispose = function () {
+                Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_rfv_tb_actualizacion_correo'));
+            }
+            Sys.Application.add_init(function () {
+                $create(Sys.Extended.UI.ValidatorCalloutBehavior, { "ClientStateFieldID": "ContentPlaceHolder1_vce_tb_actualizacion_correo_ClientState", "closeImageUrl": "/alumnos/siaax/WebResource.axd?d=KZXDpKwsqqPE4YdzL1NxCrjWr9c0G3MqEd699DnA3sLoYPRi55txqs6V74oFdfFckPsgcV5_LXwUeFC6BqRvGNw-E73LMCitcFX1tAqoWBl51m8f3kF7WTuOBRaNhZRBINUwEauIXp1c0idxB58wxw2\u0026t=634714555400000000", "id": "ContentPlaceHolder1_vce_tb_actualizacion_correo", "warningIconImageUrl": "/alumnos/siaax/WebResource.axd?d=AdycLm98SvVRNgCm8YXfmu6U56w8ApWhDe2xLlcSd64cDCbV8zNfKnArhl2dFOJe9nhMTrBBbm9-VDfB5KxMObC4G7QNozKewUWXBvH4JXcF-znE8Xe3JM2v0zwC6cZZ8U7OVpluVut9kWSfZfzgwQ2\u0026t=634714555400000000" }, null, null, $get("ContentPlaceHolder1_rfv_tb_actualizacion_correo"));
+            });
+
+            document.getElementById('ContentPlaceHolder1_rev_tb_actualizacion_correo').dispose = function () {
+                Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_rev_tb_actualizacion_correo'));
+            }
+            Sys.Application.add_init(function () {
+                $create(Sys.Extended.UI.ValidatorCalloutBehavior, { "ClientStateFieldID": "ContentPlaceHolder1_vce2_tb_actualizacion_correo_ClientState", "closeImageUrl": "/alumnos/siaax/WebResource.axd?d=KZXDpKwsqqPE4YdzL1NxCrjWr9c0G3MqEd699DnA3sLoYPRi55txqs6V74oFdfFckPsgcV5_LXwUeFC6BqRvGNw-E73LMCitcFX1tAqoWBl51m8f3kF7WTuOBRaNhZRBINUwEauIXp1c0idxB58wxw2\u0026t=634714555400000000", "highlightCssClass": "validatorCalloutHighlight", "id": "ContentPlaceHolder1_vce2_tb_actualizacion_correo", "warningIconImageUrl": "/alumnos/siaax/WebResource.axd?d=AdycLm98SvVRNgCm8YXfmu6U56w8ApWhDe2xLlcSd64cDCbV8zNfKnArhl2dFOJe9nhMTrBBbm9-VDfB5KxMObC4G7QNozKewUWXBvH4JXcF-znE8Xe3JM2v0zwC6cZZ8U7OVpluVut9kWSfZfzgwQ2\u0026t=634714555400000000" }, null, null, $get("ContentPlaceHolder1_rev_tb_actualizacion_correo"));
+            });
+            Sys.Application.add_init(function () {
+                $create(Sys.Extended.UI.ModalPopupBehavior, { "BackgroundCssClass": "backgroundColor", "PopupControlID": "ContentPlaceHolder1_pl_vista", "dynamicServicePath": "/alumnos/siaax/default.aspx", "id": "ContentPlaceHolder1_mp_vista" }, null, null, $get("ContentPlaceHolder1_hf_vista"));
+            });
+            Sys.Application.add_init(function () {
+                $create(Sys.Extended.UI.ModalPopupBehavior, { "BackgroundCssClass": "backgroundColor", "PopupControlID": "ContentPlaceHolder1_pl_vista2", "dynamicServicePath": "/alumnos/siaax/default.aspx", "id": "ContentPlaceHolder1_mp_vista2" }, null, null, $get("ContentPlaceHolder1_hf_vista2"));
+            });
+//]]>
+        </script>
+    </form>
+
+</body>
+</html>

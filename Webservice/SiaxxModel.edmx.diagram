@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7a4a8418fbbb4088850e7080dd08f306" Name="Diagram1">
+        <EntityTypeShape EntityType="System_UPBCModel.Alumnos" Width="1.5" PointX="5.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="System_UPBCModel.Calificaciones" Width="1.5" PointX="7.5" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="System_UPBCModel.Cuatrimestres" Width="1.5" PointX="3" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="System_UPBCModel.Docentes" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="System_UPBCModel.Grupos" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="System_UPBCModel.Materias" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="System_UPBCModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="System_UPBCModel.Tutor" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="System_UPBCModel.Usuario" Width="1.5" PointX="7.5" PointY="8.375" IsExpanded="true" />
+        <AssociationConnector Association="System_UPBCModel.FK_Alumnos_Cuatrimestres" ManuallyRouted="false" />
+        <AssociationConnector Association="System_UPBCModel.FK_Alumnos_Tutor" ManuallyRouted="false" />
+        <AssociationConnector Association="System_UPBCModel.FK_Calificaciones_Alumnos" ManuallyRouted="false" />
+        <AssociationConnector Association="System_UPBCModel.FK_Usuario_Alumnos" ManuallyRouted="false" />
+        <AssociationConnector Association="System_UPBCModel.FK_Calificaciones_Materias" ManuallyRouted="false" />
+        <AssociationConnector Association="System_UPBCModel.FK_Materias_Docentes" ManuallyRouted="false" />
+        <AssociationConnector Association="System_UPBCModel.FK_Tutor_Docentes" ManuallyRouted="false" />
+        <AssociationConnector Association="System_UPBCModel.FK_Materias_Grupos" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

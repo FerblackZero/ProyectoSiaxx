@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="System_UPBCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Alumnos">
+    <Key>
+      <PropertyRef Name="Id_Alumno" />
+    </Key>
+    <Property Name="Id_Alumno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Matricula" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Completo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PeriodoIngreso" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="FK_Cuatrimestre" Type="Int32" Nullable="false" />
+    <Property Name="Estatus" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Condicion" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="Int64" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FK_Tutor" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Cuatrimestres" Relationship="Self.FK_Alumnos_Cuatrimestres" FromRole="Alumnos" ToRole="Cuatrimestres" />
+    <NavigationProperty Name="Tutor" Relationship="Self.FK_Alumnos_Tutor" FromRole="Alumnos" ToRole="Tutor" />
+    <NavigationProperty Name="Calificaciones" Relationship="Self.FK_Calificaciones_Alumnos" FromRole="Alumnos" ToRole="Calificaciones" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK_Usuario_Alumnos" FromRole="Alumnos" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Calificaciones">
+    <Key>
+      <PropertyRef Name="Id_Calificaciones" />
+    </Key>
+    <Property Name="Id_Calificaciones" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FK_Alumno" Type="Int32" Nullable="false" />
+    <Property Name="FK_Materias" Type="Int32" Nullable="false" />
+    <Property Name="Calificacion1" Type="Int32" />
+    <Property Name="Calificacion2" Type="Int32" />
+    <Property Name="Calificacion3" Type="Int32" />
+    <Property Name="CalificacionFinal" Type="Int32" />
+    <NavigationProperty Name="Alumnos" Relationship="Self.FK_Calificaciones_Alumnos" FromRole="Calificaciones" ToRole="Alumnos" />
+    <NavigationProperty Name="Materias" Relationship="Self.FK_Calificaciones_Materias" FromRole="Calificaciones" ToRole="Materias" />
+  </EntityType>
+  <EntityType Name="Cuatrimestres">
+    <Key>
+      <PropertyRef Name="Id_Cuatrimestre" />
+    </Key>
+    <Property Name="Id_Cuatrimestre" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cuatrimestre" Type="Int32" />
+    <NavigationProperty Name="Alumnos" Relationship="Self.FK_Alumnos_Cuatrimestres" FromRole="Cuatrimestres" ToRole="Alumnos" />
+  </EntityType>
+  <EntityType Name="Docentes">
+    <Key>
+      <PropertyRef Name="Id_Docente" />
+    </Key>
+    <Property Name="Id_Docente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ClaveDocente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Apellidos" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Nombres" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Puesto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Materias" Relationship="Self.FK_Materias_Docentes" FromRole="Docentes" ToRole="Materias" />
+    <NavigationProperty Name="Tutor" Relationship="Self.FK_Tutor_Docentes" FromRole="Docentes" ToRole="Tutor" />
+  </EntityType>
+  <EntityType Name="Grupos">
+    <Key>
+      <PropertyRef Name="Id_Grupo" />
+    </Key>
+    <Property Name="Id_Grupo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Grupo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Materias" Relationship="Self.FK_Materias_Grupos" FromRole="Grupos" ToRole="Materias" />
+  </EntityType>
+  <EntityType Name="Materias">
+    <Key>
+      <PropertyRef Name="Id_Materias" />
+    </Key>
+    <Property Name="Id_Materias" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Clave" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Materia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PrimerCorte" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SegundoCorte" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TercerCorte" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Horario" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="FK_Docente" Type="Int32" Nullable="false" />
+    <Property Name="FK_Grupo" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Calificaciones" Relationship="Self.FK_Calificaciones_Materias" FromRole="Materias" ToRole="Calificaciones" />
+    <NavigationProperty Name="Docentes" Relationship="Self.FK_Materias_Docentes" FromRole="Materias" ToRole="Docentes" />
+    <NavigationProperty Name="Grupos" Relationship="Self.FK_Materias_Grupos" FromRole="Materias" ToRole="Grupos" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Tutor">
+    <Key>
+      <PropertyRef Name="Id_Tutor" />
+    </Key>
+    <Property Name="Id_Tutor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FK_Docente" Type="Int32" Nullable="false" />
+    <Property Name="HorarioAtencion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Alumnos" Relationship="Self.FK_Alumnos_Tutor" FromRole="Tutor" ToRole="Alumnos" />
+    <NavigationProperty Name="Docentes" Relationship="Self.FK_Tutor_Docentes" FromRole="Tutor" ToRole="Docentes" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="Id_Usuario" />
+    </Key>
+    <Property Name="Id_Usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Matricula" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Contraseña" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="FK_Alumno" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Alumnos" Relationship="Self.FK_Usuario_Alumnos" FromRole="Usuario" ToRole="Alumnos" />
+  </EntityType>
+  <Association Name="FK_Alumnos_Cuatrimestres">
+    <End Role="Cuatrimestres" Type="Self.Cuatrimestres" Multiplicity="1" />
+    <End Role="Alumnos" Type="Self.Alumnos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cuatrimestres">
+        <PropertyRef Name="Id_Cuatrimestre" />
+      </Principal>
+      <Dependent Role="Alumnos">
+        <PropertyRef Name="FK_Cuatrimestre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Alumnos_Tutor">
+    <End Role="Tutor" Type="Self.Tutor" Multiplicity="1" />
+    <End Role="Alumnos" Type="Self.Alumnos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tutor">
+        <PropertyRef Name="Id_Tutor" />
+      </Principal>
+      <Dependent Role="Alumnos">
+        <PropertyRef Name="FK_Tutor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Calificaciones_Alumnos">
+    <End Role="Alumnos" Type="Self.Alumnos" Multiplicity="1" />
+    <End Role="Calificaciones" Type="Self.Calificaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alumnos">
+        <PropertyRef Name="Id_Alumno" />
+      </Principal>
+      <Dependent Role="Calificaciones">
+        <PropertyRef Name="FK_Alumno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Usuario_Alumnos">
+    <End Role="Alumnos" Type="Self.Alumnos" Multiplicity="1" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alumnos">
+        <PropertyRef Name="Id_Alumno" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="FK_Alumno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Calificaciones_Materias">
+    <End Role="Materias" Type="Self.Materias" Multiplicity="1" />
+    <End Role="Calificaciones" Type="Self.Calificaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Materias">
+        <PropertyRef Name="Id_Materias" />
+      </Principal>
+      <Dependent Role="Calificaciones">
+        <PropertyRef Name="FK_Materias" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Materias_Docentes">
+    <End Role="Docentes" Type="Self.Docentes" Multiplicity="1" />
+    <End Role="Materias" Type="Self.Materias" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Docentes">
+        <PropertyRef Name="Id_Docente" />
+      </Principal>
+      <Dependent Role="Materias">
+        <PropertyRef Name="FK_Docente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tutor_Docentes">
+    <End Role="Docentes" Type="Self.Docentes" Multiplicity="1" />
+    <End Role="Tutor" Type="Self.Tutor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Docentes">
+        <PropertyRef Name="Id_Docente" />
+      </Principal>
+      <Dependent Role="Tutor">
+        <PropertyRef Name="FK_Docente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Materias_Grupos">
+    <End Role="Grupos" Type="Self.Grupos" Multiplicity="1" />
+    <End Role="Materias" Type="Self.Materias" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grupos">
+        <PropertyRef Name="Id_Grupo" />
+      </Principal>
+      <Dependent Role="Materias">
+        <PropertyRef Name="FK_Grupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="System_UPBCEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Alumnos" EntityType="Self.Alumnos" />
+    <EntitySet Name="Calificaciones" EntityType="Self.Calificaciones" />
+    <EntitySet Name="Cuatrimestres" EntityType="Self.Cuatrimestres" />
+    <EntitySet Name="Docentes" EntityType="Self.Docentes" />
+    <EntitySet Name="Grupos" EntityType="Self.Grupos" />
+    <EntitySet Name="Materias" EntityType="Self.Materias" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Tutor" EntityType="Self.Tutor" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+    <AssociationSet Name="FK_Alumnos_Cuatrimestres" Association="Self.FK_Alumnos_Cuatrimestres">
+      <End Role="Cuatrimestres" EntitySet="Cuatrimestres" />
+      <End Role="Alumnos" EntitySet="Alumnos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Alumnos_Tutor" Association="Self.FK_Alumnos_Tutor">
+      <End Role="Tutor" EntitySet="Tutor" />
+      <End Role="Alumnos" EntitySet="Alumnos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Calificaciones_Alumnos" Association="Self.FK_Calificaciones_Alumnos">
+      <End Role="Alumnos" EntitySet="Alumnos" />
+      <End Role="Calificaciones" EntitySet="Calificaciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Usuario_Alumnos" Association="Self.FK_Usuario_Alumnos">
+      <End Role="Alumnos" EntitySet="Alumnos" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Calificaciones_Materias" Association="Self.FK_Calificaciones_Materias">
+      <End Role="Materias" EntitySet="Materias" />
+      <End Role="Calificaciones" EntitySet="Calificaciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Materias_Docentes" Association="Self.FK_Materias_Docentes">
+      <End Role="Docentes" EntitySet="Docentes" />
+      <End Role="Materias" EntitySet="Materias" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tutor_Docentes" Association="Self.FK_Tutor_Docentes">
+      <End Role="Docentes" EntitySet="Docentes" />
+      <End Role="Tutor" EntitySet="Tutor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Materias_Grupos" Association="Self.FK_Materias_Grupos">
+      <End Role="Grupos" EntitySet="Grupos" />
+      <End Role="Materias" EntitySet="Materias" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

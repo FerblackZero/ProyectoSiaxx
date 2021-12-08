@@ -1,0 +1,21 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="EnSesion.master.cs" Inherits="WebApplication3.view.EnSesion" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+<main class="main">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            </main>
+
+    <p>
+        Chale</p>
+
+</body>
+</html>
